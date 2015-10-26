@@ -1,0 +1,29 @@
+/*!
+Theme Name: Darrohn Design v2.0
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Jed Darrohn
+Author URI: http://darrohndesign.com
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+@import "compass";
+@import "compass/reset";
+
+@import "_partials/fonts";
+@import "_partials/globals";
+@import "_partials/header";
+@import "_partials/footer";
+@import "_partials/sidebar";
+@import "_partials/home";
+@import "_partials/single-post";
+@import "_partials/comments";
+@import "_partials/contact-form";
+@import "_partials/overrides";
+@import "_partials/media-queries";

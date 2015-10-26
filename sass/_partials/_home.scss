@@ -1,0 +1,10 @@
+#section-home-example{
+  background-image: url(images/thirteen05-blue-square-bg.jpg);
+  height: 100vh;
+  
+  #logo{
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+    
+  }
+}
