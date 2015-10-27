@@ -1,14 +1,43 @@
   <?php get_template_part('modal'); ?>
-
-
-
-
-
-
-
-
-
-
+                </div>      
+                <div id="FooterWrapper">
+                    <div id="Footer">
+                        <div class="row">
+                            <div class="col-md-6 col-md-push-6">
+                                <div id="Socials">
+                            <a href="https://www.facebook.com/captainkiddfishing" target="_blank">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-facebook.png" width="62" height="60">
+                            </a>
+                            <a href="https://plus.google.com/103919644994830458597/posts" target="_blank">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-googleplus.png" width="62" height="60">
+                            </a><a href="https://twitter.com/captainkiddfish" target="_blank">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-twitter.png" width="62" height="60">
+                            </a>
+                            <a href="http://www.linkedin.com/pub/capt-robert-kidd/68/442/168" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-linkedin.png" width="62" height="60">
+                            </a>
+                        </div>
+                            </div>
+                            <div class="col-md-6 col-md-pull-6">
+                                <a href="index.html">Home</a>
+                                | 
+                                <a href="charter-boat-trips.html">Trips</a>
+                                | 
+                                <a href="fishing-boat.html">Boat Specs</a>
+                                | 
+                                <a href="testimonials.html">Testimonials</a>
+                                | 
+                                <a href="contact.html">Contact</a>
+                                <br>
+                                © 2015 Captain Kidd Fishing Services.
+                                <a href="http://www.fastf.com" target="_blank">Web Design by Fast F</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -17,22 +46,13 @@
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/plugins.js"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-
-        <script>
-
-          
-          
-
-        </script>
+    <script>
+      
+      var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
+          swiffyobject, {});
+      stage.setBackground(null);
+      stage.start();
+    </script>
 
         <?php wp_footer(); ?>
 

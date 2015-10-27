@@ -1,10 +1,8 @@
-#section-home-example{
-  background-image: url(images/thirteen05-blue-square-bg.jpg);
-  height: 100vh;
-  
-  #logo{
-    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
-    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
-    
-  }
+#swiffycontainer{
+    display: block;
+    margin: auto auto;
+    max-width: 100%;
+}
+.home h1.post-title{
+    display: none;
 }

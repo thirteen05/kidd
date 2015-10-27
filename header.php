@@ -14,7 +14,40 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
-      
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/runtime.js"></script>
+        <?php
+            if ( is_front_page() ) {
+                include '/wp-content/themes/kidd/swiffy-code.php';
+            } 
+        ?>
         <?php wp_head(); ?>
   </head>
     <body <?php body_class(); ?>>
+        <div class="container-full">
+            <div class="row">
+                    <header>
+                        <div class="container">
+                            <div class="row">
+                                <ul class="menu-left menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Trips</a></li>
+                                    <li><a href="#">Boat Specs</a></li>
+                                </ul>
+                                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
+                                <ul class="menu-right menu">
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="main-contain">
+                    <?php
+                        if ( is_front_page() ) {
+                    ?>
+                        <div id="swiffycontainer" style="width: 100%; height: 301px"></div>
+                    <?php
+                        } 
+                    ?>
+                        <div class="col-md-12 nopadding inner-contain">
+                            <div id="ContentWrapper">

@@ -1,0 +1,44 @@
+header{
+    background: url('images/header.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 240px;
+    z-index: 9;
+    
+    .logo{
+        display: block;
+        margin: auto auto;
+    }
+}
+.menu{
+    padding: 0;
+    
+    &.menu-left{
+        position: absolute;
+        bottom: 0;
+        left: 18%;
+        width: 40%;
+    }
+    
+    &.menu-right{
+        position: absolute;
+        bottom: 0;
+        right: 22%;
+    }
+    
+    li{
+        display: inline-block;
+        list-style: none;
+        width: auto;
+        
+        a{
+            font-family: 'capt';
+            font-size: 2.5rem;
+            padding: 10px 16%;
+            color: #F4E2C5;
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+        }
+    }
+}

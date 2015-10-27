@@ -7256,11 +7256,132 @@ button.close {
   /* line 18, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
+/* line 2, sass/_partials/_globals.scss */
+.container-full .row {
+  margin-right: 0;
+  margin-left: 0; }
+
+/* line 7, sass/_partials/_globals.scss */
+.nopadding {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 11, sass/_partials/_globals.scss */
+a:focus {
+  outline: none;
+  outline: none -webkit-focus-ring-color;
+  outline-offset: 0; }
+
+/* line 16, sass/_partials/_globals.scss */
+.alignright {
+  float: right;
+  margin: 0 0 10px 10px; }
+
+/* line 20, sass/_partials/_globals.scss */
+.alignleft {
+  float: left;
+  margin: 0 10px 10px 0; }
+
+/* line 24, sass/_partials/_globals.scss */
+.aligncenter {
+  display: block;
+  margin: auto auto; }
+
+/* line 28, sass/_partials/_globals.scss */
+.main-contain {
+  background: url(images/bkgd.jpg) no-repeat;
+  background-position: top center;
+  height: auto;
+  position: relative;
+  top: -6px;
+  padding: 14px 15% 2% 15%;
+  background-color: #013C4E;
+  background-size: 110% auto;
+  margin-bottom: -6px; }
+
+/* line 39, sass/_partials/_globals.scss */
+.col-md-12.inner-contain {
+  float: none; }
+
+/* line 42, sass/_partials/_globals.scss */
+#ContentWrapper {
+  min-height: 400px;
+  background: url(images/bkgd-content.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 5%; }
+
+/* line 48, sass/_partials/_globals.scss */
+#FooterWrapper {
+  background: url(images/footer.png) no-repeat top center;
+  background-size: 100%;
+  padding: 14px 2%;
+  position: relative;
+  top: -7px; }
+
+/* line 55, sass/_partials/_globals.scss */
+#Footer {
+  color: white; }
+  /* line 58, sass/_partials/_globals.scss */
+  #Footer a {
+    color: white; }
+
+/* line 62, sass/_partials/_globals.scss */
+#Socials {
+  float: right; }
+
+@font-face {
+  font-family: 'capt';
+  src: url("fonts/captkd.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/captkd.eot?#iefix") format("embedded-opentype"), url("fonts/captkd.woff2") format("woff2"), url("fonts/captkd.woff") format("woff"), url("fonts/captkd.ttf") format("truetype"), url("fonts/captkd.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+/* line 1, sass/_partials/_navbar.scss */
+header {
+  background: url("images/header.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 240px;
+  z-index: 9; }
+  /* line 8, sass/_partials/_navbar.scss */
+  header .logo {
+    display: block;
+    margin: auto auto; }
+
+/* line 13, sass/_partials/_navbar.scss */
+.menu {
+  padding: 0; }
+  /* line 16, sass/_partials/_navbar.scss */
+  .menu.menu-left {
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    width: 40%; }
+  /* line 23, sass/_partials/_navbar.scss */
+  .menu.menu-right {
+    position: absolute;
+    bottom: 0;
+    right: 22%; }
+  /* line 29, sass/_partials/_navbar.scss */
+  .menu li {
+    display: inline-block;
+    list-style: none;
+    width: auto; }
+    /* line 34, sass/_partials/_navbar.scss */
+    .menu li a {
+      font-family: 'capt';
+      font-size: 2.5rem;
+      padding: 10px 16%;
+      color: #F4E2C5;
+      display: block;
+      width: 100%;
+      white-space: nowrap; }
+
 /* line 1, sass/_partials/_home.scss */
-#section-home-example {
-  background-image: url(images/thirteen05-blue-square-bg.jpg);
-  height: 100vh; }
-  /* line 5, sass/_partials/_home.scss */
-  #section-home-example #logo {
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)); }
+#swiffycontainer {
+  display: block;
+  margin: auto auto;
+  max-width: 100%; }
+
+/* line 6, sass/_partials/_home.scss */
+.home h1.post-title {
+  display: none; }
