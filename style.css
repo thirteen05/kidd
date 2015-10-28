@@ -7256,38 +7256,51 @@ button.close {
   /* line 18, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 2, sass/_partials/_globals.scss */
+/* line 1, sass/_partials/_globals.scss */
+h1 {
+  font-family: 'capt';
+  color: #B03D31;
+  word-spacing: -16px;
+  font-weight: bold;
+  font-size: 3.4rem; }
+
+/* line 8, sass/_partials/_globals.scss */
+a {
+  color: #A93529;
+  text-decoration: underline; }
+
+/* line 13, sass/_partials/_globals.scss */
 .container-full .row {
   margin-right: 0;
   margin-left: 0; }
 
-/* line 7, sass/_partials/_globals.scss */
+/* line 18, sass/_partials/_globals.scss */
 .nopadding {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 11, sass/_partials/_globals.scss */
+/* line 22, sass/_partials/_globals.scss */
 a:focus {
   outline: none;
   outline: none -webkit-focus-ring-color;
   outline-offset: 0; }
 
-/* line 16, sass/_partials/_globals.scss */
+/* line 27, sass/_partials/_globals.scss */
 .alignright {
   float: right;
   margin: 0 0 10px 10px; }
 
-/* line 20, sass/_partials/_globals.scss */
+/* line 31, sass/_partials/_globals.scss */
 .alignleft {
   float: left;
   margin: 0 10px 10px 0; }
 
-/* line 24, sass/_partials/_globals.scss */
+/* line 35, sass/_partials/_globals.scss */
 .aligncenter {
   display: block;
   margin: auto auto; }
 
-/* line 28, sass/_partials/_globals.scss */
+/* line 39, sass/_partials/_globals.scss */
 .main-contain {
   background: url(images/bkgd.jpg) no-repeat;
   background-position: top center;
@@ -7299,18 +7312,18 @@ a:focus {
   background-size: 110% auto;
   margin-bottom: -6px; }
 
-/* line 39, sass/_partials/_globals.scss */
+/* line 50, sass/_partials/_globals.scss */
 .col-md-12.inner-contain {
   float: none; }
 
-/* line 42, sass/_partials/_globals.scss */
+/* line 53, sass/_partials/_globals.scss */
 #ContentWrapper {
   min-height: 400px;
   background: url(images/bkgd-content.png) no-repeat;
   background-size: 100% 100%;
   padding: 5%; }
 
-/* line 48, sass/_partials/_globals.scss */
+/* line 59, sass/_partials/_globals.scss */
 #FooterWrapper {
   background: url(images/footer.png) no-repeat top center;
   background-size: 100%;
@@ -7318,14 +7331,17 @@ a:focus {
   position: relative;
   top: -7px; }
 
-/* line 55, sass/_partials/_globals.scss */
+/* line 66, sass/_partials/_globals.scss */
 #Footer {
   color: white; }
-  /* line 58, sass/_partials/_globals.scss */
+  /* line 69, sass/_partials/_globals.scss */
+  #Footer .left-side {
+    padding-top: 10px; }
+  /* line 73, sass/_partials/_globals.scss */
   #Footer a {
     color: white; }
 
-/* line 62, sass/_partials/_globals.scss */
+/* line 77, sass/_partials/_globals.scss */
 #Socials {
   float: right; }
 
@@ -7335,6 +7351,13 @@ a:focus {
   /* IE9 Compat Modes */
   src: url("fonts/captkd.eot?#iefix") format("embedded-opentype"), url("fonts/captkd.woff2") format("woff2"), url("fonts/captkd.woff") format("woff"), url("fonts/captkd.ttf") format("truetype"), url("fonts/captkd.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
+/* line 10, sass/_partials/_fonts.scss */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: black;
+  -webkit-font-smoothing: antialiased; }
+
 /* line 1, sass/_partials/_navbar.scss */
 header {
   background: url("images/header.png") no-repeat;
@@ -7374,7 +7397,35 @@ header {
       color: #F4E2C5;
       display: block;
       width: 100%;
-      white-space: nowrap; }
+      white-space: nowrap;
+      text-shadow: 2px 2px black;
+      text-decoration: none;
+      word-spacing: -12px;
+      box-sizing: content-box;
+      -webkit-box-sizing: content-box; }
+      /* line 48, sass/_partials/_navbar.scss */
+      .menu li a:hover {
+        text-decoration: none; }
+
+/* line 54, sass/_partials/_navbar.scss */
+.header-cta-container {
+  position: absolute;
+  right: 17%; }
+  /* line 58, sass/_partials/_navbar.scss */
+  .header-cta-container .reservations {
+    background: url("images/btn-reservations.png") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 185px;
+    height: 70px;
+    transition: ease all 0.2s; }
+  /* line 70, sass/_partials/_navbar.scss */
+  .header-cta-container .photogallery {
+    background: url("images/btn-photos.png") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 185px;
+    height: 70px; }
 
 /* line 1, sass/_partials/_home.scss */
 #swiffycontainer {

@@ -39,6 +39,39 @@ header{
             display: block;
             width: 100%;
             white-space: nowrap;
+            text-shadow: 2px 2px black;
+            text-decoration: none;
+            word-spacing: -12px;
+            box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            
+            &:hover{
+                text-decoration: none;
+            }
         }
+    }
+}
+.header-cta-container{
+    position: absolute;
+    right: 17%;
+    
+    .reservations{
+        background: url('images/btn-reservations.png') no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        width: 185px;
+        height: 70px;
+        transition: ease all 0.2s;
+        
+        &:hover{
+            
+        }
+    }
+    .photogallery{
+        background: url('images/btn-photos.png') no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        width: 185px;
+        height: 70px;
     }
 }

@@ -18,18 +18,20 @@
                         </div>
                             </div>
                             <div class="col-md-6 col-md-pull-6">
-                                <a href="index.html">Home</a>
-                                | 
-                                <a href="charter-boat-trips.html">Trips</a>
-                                | 
-                                <a href="fishing-boat.html">Boat Specs</a>
-                                | 
-                                <a href="testimonials.html">Testimonials</a>
-                                | 
-                                <a href="contact.html">Contact</a>
-                                <br>
-                                © 2015 Captain Kidd Fishing Services.
-                                <a href="http://www.fastf.com" target="_blank">Web Design by Fast F</a>
+                                <div class="left-side">
+                                    <a href="index.html">Home</a>
+                                    | 
+                                    <a href="charter-boat-trips.html">Trips</a>
+                                    | 
+                                    <a href="fishing-boat.html">Boat Specs</a>
+                                    | 
+                                    <a href="testimonials.html">Testimonials</a>
+                                    | 
+                                    <a href="contact.html">Contact</a>
+                                    <br>
+                                    © 2015 Captain Kidd Fishing Services.
+                                    <a href="http://www.fastf.com" target="_blank">Web Design by Fast F</a>
+                                </div>
                             </div>
                         </div>
                     </div>

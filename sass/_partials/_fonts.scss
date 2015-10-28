@@ -7,3 +7,9 @@
        url('fonts/captkd.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('fonts/captkd.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+body{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
