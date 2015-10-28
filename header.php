@@ -12,15 +12,15 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/runtime.js"></script>
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/runtime.js">       </script>
         <?php
             if ( is_front_page() ) {
                 include '/wp-content/themes/kidd/swiffy-code.php';
             } 
         ?>
         <?php wp_head(); ?>
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   </head>
     <body <?php body_class(); ?>>
         <div class="container-full">
@@ -29,18 +29,18 @@
                         <div class="container">
                             <div class="row">
                                 <div class="header-cta-container">
-                                    <a href="#" class="reservations"></a>
-                                    <a href="#" class="photogallery"></a>
+                                    <a href="<?php echo site_url(); ?>/reservations" class="reservations"></a>
+                                    <a href="<?php echo site_url(); ?>/photogallerys" class="photogallery"></a>
                                 </div>
-                                <ul class="menu-left menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Trips</a></li>
-                                    <li><a href="#">Boat Specs</a></li>
+                                <ul class="menu-lefter menu-main">
+                                    <li><a href="<?php echo site_url(); ?>/">Home</a></li>
+                                    <li><a href="<?php echo site_url(); ?>/charter-boat-trips">Trips</a></li>
+                                    <li><a href="<?php echo site_url(); ?>/fishing-boat">Boat Specs</a></li>
                                 </ul>
                                     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Captain Kidd Logo"/>
-                                <ul class="menu-right menu">
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                <ul class="menu-right menu-main">
+                                    <li><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></li>
+                                    <li><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>

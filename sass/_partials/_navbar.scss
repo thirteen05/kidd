@@ -10,14 +10,14 @@ header{
         margin: auto auto;
     }
 }
-.menu{
+.menu-main{
     padding: 0;
     
-    &.menu-left{
+    &.menu-lefter{
         position: absolute;
         bottom: 0;
         left: 18%;
-        width: 40%;
+        width: auto;
     }
     
     &.menu-right{
@@ -42,8 +42,7 @@ header{
             text-shadow: 2px 2px black;
             text-decoration: none;
             word-spacing: -12px;
-            box-sizing: content-box;
-            -webkit-box-sizing: content-box;
+            text-align: center;
             
             &:hover{
                 text-decoration: none;

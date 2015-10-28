@@ -1,13 +1,9 @@
-h1{
-    font-family: 'capt';
-    color: #B03D31;
-    word-spacing: -16px;
-    font-weight: bold;
-    font-size: 3.4rem;
-}
+
 a{
     color: #A93529;
     text-decoration: underline;
+    outline: 0 !important;
+    outline-offset: 0 !important;
 }
 .container-full{
     .row{
@@ -21,7 +17,6 @@ a{
 }
 a:focus {
     outline: none;
-    outline: none -webkit-focus-ring-color;
     outline-offset: 0;
 }
 .alignright{
@@ -54,7 +49,7 @@ a:focus {
     min-height: 400px;
     background: url(images/bkgd-content.png) no-repeat;
     background-size: 100% 100%;
-    padding: 5%;
+    padding: 6% 5% 5% 5%;
 }
 #FooterWrapper {
     background: url(images/footer.png) no-repeat top center;
@@ -76,4 +71,18 @@ a:focus {
 }
 #Socials{
     float: right;
+}
+blockquote{
+    padding: 10px 0px 0 45px;
+    margin: 0px 20px;
+    background-image: url(images/quote.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    border-left: 0;
+    font-size: inherit;
+}
+hr {
+    border: 1px dashed #B03D31;
+    width: 85%;
+    margin: 30px auto;
 }

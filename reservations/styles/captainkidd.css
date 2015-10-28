@@ -1,0 +1,26 @@
+/* 
+    Document   : captainkidd.css
+    Created on : January 2, 2014, 9:48:10 PM
+    Author     : KP
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#container {
+    width:              900px;
+}
+#container h3{
+    margin:             0;
+}
+#container #header{
+    width:              900px;
+}
+#container .page-box{
+    width:              900px;
+}
+#container #login-content {
+    margin:             auto;
+}
+.crContainer{
+    margin: auto;
+}

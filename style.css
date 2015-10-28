@@ -1828,14 +1828,13 @@ abbr[data-original-title] {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 5px solid #eeeeee; }
-  /* line 250, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+  font-size: 17.5px; }
+  /* line 249, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   blockquote p:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
     margin-bottom: 0; }
-  /* line 257, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+  /* line 256, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   blockquote footer,
   blockquote small,
   blockquote .small {
@@ -1843,13 +1842,13 @@ blockquote {
     font-size: 80%;
     line-height: 1.42857;
     color: #777777; }
-    /* line 265, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+    /* line 264, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
     blockquote footer:before,
     blockquote small:before,
     blockquote .small:before {
       content: '\2014 \00A0'; }
 
-/* line 274, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 273, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .blockquote-reverse,
 blockquote.pull-right {
   padding-right: 15px;
@@ -1857,7 +1856,7 @@ blockquote.pull-right {
   border-right: 5px solid #eeeeee;
   border-left: 0;
   text-align: right; }
-  /* line 286, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+  /* line 285, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   .blockquote-reverse footer:before,
   .blockquote-reverse small:before,
   .blockquote-reverse .small:before,
@@ -1865,7 +1864,7 @@ blockquote.pull-right {
   blockquote.pull-right small:before,
   blockquote.pull-right .small:before {
     content: ''; }
-  /* line 287, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+  /* line 286, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   .blockquote-reverse footer:after,
   .blockquote-reverse small:after,
   .blockquote-reverse .small:after,
@@ -1874,7 +1873,7 @@ blockquote.pull-right {
   blockquote.pull-right .small:after {
     content: '\00A0 \2014'; }
 
-/* line 294, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
+/* line 293, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 address {
   margin-bottom: 20px;
   font-style: normal;
@@ -7256,51 +7255,44 @@ button.close {
   /* line 18, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/* line 1, sass/_partials/_globals.scss */
-h1 {
-  font-family: 'capt';
-  color: #B03D31;
-  word-spacing: -16px;
-  font-weight: bold;
-  font-size: 3.4rem; }
-
-/* line 8, sass/_partials/_globals.scss */
+/* line 2, sass/_partials/_globals.scss */
 a {
   color: #A93529;
-  text-decoration: underline; }
+  text-decoration: underline;
+  outline: 0 !important;
+  outline-offset: 0 !important; }
 
-/* line 13, sass/_partials/_globals.scss */
+/* line 9, sass/_partials/_globals.scss */
 .container-full .row {
   margin-right: 0;
   margin-left: 0; }
 
-/* line 18, sass/_partials/_globals.scss */
+/* line 14, sass/_partials/_globals.scss */
 .nopadding {
   padding-left: 0;
   padding-right: 0; }
 
-/* line 22, sass/_partials/_globals.scss */
+/* line 18, sass/_partials/_globals.scss */
 a:focus {
   outline: none;
-  outline: none -webkit-focus-ring-color;
   outline-offset: 0; }
 
-/* line 27, sass/_partials/_globals.scss */
+/* line 22, sass/_partials/_globals.scss */
 .alignright {
   float: right;
   margin: 0 0 10px 10px; }
 
-/* line 31, sass/_partials/_globals.scss */
+/* line 26, sass/_partials/_globals.scss */
 .alignleft {
   float: left;
   margin: 0 10px 10px 0; }
 
-/* line 35, sass/_partials/_globals.scss */
+/* line 30, sass/_partials/_globals.scss */
 .aligncenter {
   display: block;
   margin: auto auto; }
 
-/* line 39, sass/_partials/_globals.scss */
+/* line 34, sass/_partials/_globals.scss */
 .main-contain {
   background: url(images/bkgd.jpg) no-repeat;
   background-position: top center;
@@ -7312,18 +7304,18 @@ a:focus {
   background-size: 110% auto;
   margin-bottom: -6px; }
 
-/* line 50, sass/_partials/_globals.scss */
+/* line 45, sass/_partials/_globals.scss */
 .col-md-12.inner-contain {
   float: none; }
 
-/* line 53, sass/_partials/_globals.scss */
+/* line 48, sass/_partials/_globals.scss */
 #ContentWrapper {
   min-height: 400px;
   background: url(images/bkgd-content.png) no-repeat;
   background-size: 100% 100%;
-  padding: 5%; }
+  padding: 6% 5% 5% 5%; }
 
-/* line 59, sass/_partials/_globals.scss */
+/* line 54, sass/_partials/_globals.scss */
 #FooterWrapper {
   background: url(images/footer.png) no-repeat top center;
   background-size: 100%;
@@ -7331,19 +7323,35 @@ a:focus {
   position: relative;
   top: -7px; }
 
-/* line 66, sass/_partials/_globals.scss */
+/* line 61, sass/_partials/_globals.scss */
 #Footer {
   color: white; }
-  /* line 69, sass/_partials/_globals.scss */
+  /* line 64, sass/_partials/_globals.scss */
   #Footer .left-side {
     padding-top: 10px; }
-  /* line 73, sass/_partials/_globals.scss */
+  /* line 68, sass/_partials/_globals.scss */
   #Footer a {
     color: white; }
 
-/* line 77, sass/_partials/_globals.scss */
+/* line 72, sass/_partials/_globals.scss */
 #Socials {
   float: right; }
+
+/* line 75, sass/_partials/_globals.scss */
+blockquote {
+  padding: 10px 0px 0 45px;
+  margin: 0px 20px;
+  background-image: url(images/quote.png);
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  border-left: 0;
+  font-size: inherit; }
+
+/* line 84, sass/_partials/_globals.scss */
+hr {
+  border: 1px dashed #B03D31;
+  width: 85%;
+  margin: 30px auto; }
 
 @font-face {
   font-family: 'capt';
@@ -7357,6 +7365,41 @@ body {
   font-size: 15px;
   color: black;
   -webkit-font-smoothing: antialiased; }
+  /* line 16, sass/_partials/_fonts.scss */
+  body .fl-row-content-wrap {
+    padding: 0; }
+  /* line 19, sass/_partials/_fonts.scss */
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'capt';
+    color: #7D231A;
+    word-spacing: -16px;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem; }
+  /* line 27, sass/_partials/_fonts.scss */
+  body h1 a, body h2 a, body h3 a, body h4 a, body h5 a, body h6 a {
+    color: #7D231A; }
+  /* line 30, sass/_partials/_fonts.scss */
+  body h1 {
+    font-size: 3.2rem;
+    color: #B03D31; }
+  /* line 34, sass/_partials/_fonts.scss */
+  body h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem; }
+  /* line 39, sass/_partials/_fonts.scss */
+  body h3 {
+    font-size: 2.3rem; }
+  /* line 42, sass/_partials/_fonts.scss */
+  body h4 {
+    font-size: 2.1rem; }
+  /* line 45, sass/_partials/_fonts.scss */
+  body h5 {
+    font-size: 2rem; }
+  /* line 48, sass/_partials/_fonts.scss */
+  body h6 {
+    font-size: 1.8rem; }
 
 /* line 1, sass/_partials/_navbar.scss */
 header {
@@ -7371,26 +7414,26 @@ header {
     margin: auto auto; }
 
 /* line 13, sass/_partials/_navbar.scss */
-.menu {
+.menu-main {
   padding: 0; }
   /* line 16, sass/_partials/_navbar.scss */
-  .menu.menu-left {
+  .menu-main.menu-lefter {
     position: absolute;
     bottom: 0;
     left: 18%;
-    width: 40%; }
+    width: auto; }
   /* line 23, sass/_partials/_navbar.scss */
-  .menu.menu-right {
+  .menu-main.menu-right {
     position: absolute;
     bottom: 0;
     right: 22%; }
   /* line 29, sass/_partials/_navbar.scss */
-  .menu li {
+  .menu-main li {
     display: inline-block;
     list-style: none;
     width: auto; }
     /* line 34, sass/_partials/_navbar.scss */
-    .menu li a {
+    .menu-main li a {
       font-family: 'capt';
       font-size: 2.5rem;
       padding: 10px 16%;
@@ -7401,17 +7444,16 @@ header {
       text-shadow: 2px 2px black;
       text-decoration: none;
       word-spacing: -12px;
-      box-sizing: content-box;
-      -webkit-box-sizing: content-box; }
-      /* line 48, sass/_partials/_navbar.scss */
-      .menu li a:hover {
+      text-align: center; }
+      /* line 47, sass/_partials/_navbar.scss */
+      .menu-main li a:hover {
         text-decoration: none; }
 
-/* line 54, sass/_partials/_navbar.scss */
+/* line 53, sass/_partials/_navbar.scss */
 .header-cta-container {
   position: absolute;
   right: 17%; }
-  /* line 58, sass/_partials/_navbar.scss */
+  /* line 57, sass/_partials/_navbar.scss */
   .header-cta-container .reservations {
     background: url("images/btn-reservations.png") no-repeat;
     background-size: 100%;
@@ -7419,7 +7461,7 @@ header {
     width: 185px;
     height: 70px;
     transition: ease all 0.2s; }
-  /* line 70, sass/_partials/_navbar.scss */
+  /* line 69, sass/_partials/_navbar.scss */
   .header-cta-container .photogallery {
     background: url("images/btn-photos.png") no-repeat;
     background-size: 100%;
