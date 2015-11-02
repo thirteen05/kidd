@@ -1,0 +1,280 @@
+@keyframes hook {
+    0%{
+      top: 0;
+    }
+    50%{
+        top: 92vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.hook-out img{
+  animation-name: hook;
+  animation-duration: 1s; 
+  animation-timing-function: ease; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+}
+
+/*
+  is the same as:
+*/
+
+.hook-out img{
+  animation: 
+    hook
+    1s
+    ease
+    0
+    alternate
+    infinite
+    none
+    running;
+}
+@keyframes hookline {
+    0%{
+      height: 14px;
+    }
+    50%{
+        height: 94vh;
+    }
+    100%{
+        height: 14px;
+    }
+}
+
+.hook-out:before{
+  animation-name: hookline;
+  animation-duration: 1s; 
+  animation-timing-function: ease; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+}
+
+/*
+  is the same as:
+*/
+
+.hook-out:before{
+  animation: 
+    hookline
+    1s
+    ease
+    0
+    alternate
+    infinite
+    none
+    running;
+}
+@media (max-width: 1540px){
+    .menu-main.menu-lefter{
+        left: 11%;
+    }
+    .menu-main.menu-right{
+        right: 15%;
+    }
+    header .logo{
+        width: 20vw;
+    }
+}
+@media (max-width: 1270px){
+    .menu-main.menu-lefter{
+        left: 4%;
+    }
+    .menu-main.menu-right{
+        right: 4%;
+    }
+    header{
+        height: 19vw;
+    }
+}
+@media (min-width: 1025px){
+    .mobile-bar{
+        display: none;
+    }
+}
+@media (max-width: 1024px){
+    .header-cta-container{
+        display: none;
+    }
+    .mobile-bar{
+        display: block;
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        background: url("images/header.png") no-repeat;
+        background-size: auto 242%;
+        background-position: bottom;
+    }
+    .logo-mobile{
+        width: 87px;
+    }
+    .mobile-trigger{
+        position: relative;
+        float: right;
+        padding-top: 31px;
+        padding-right: 43px;
+        font-family: 'capt';
+        text-decoration: none;
+        letter-spacing: 3px;
+        color: white;
+        font-size: 21px;
+        
+        span{
+            visibility: visible;
+            opacity: 1;
+            transition: ease all 0.3s;
+            -webkit-transition: ease all 0.3s;
+        }
+        
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+        
+        &.hook-out{
+//            img{
+//                top: 92vh;
+//            }
+//            &:before{
+//                height: 94vh;
+//            }
+            span{
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+        
+        &:before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 14px;
+            background: black;
+            position: absolute;
+            top: 0px;
+            right: 36px;
+        }
+        
+        img{
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            right: 0;
+            z-index: 999;
+            transition: ease all 0.6s;
+            -webkit-transition: ease all 0.6s;
+        }
+    }
+    
+    header{
+        position: fixed;
+        width: 100%;
+        height: 0;
+        bottom:0;
+        transition: ease all 0.5s;
+        -webkit-transition: ease all 0.5s;
+        transition-delay: 0.49s;
+        -webkit-transition-delay: 0.49s;
+        
+        &.opened{
+            height: 100vh;
+        }
+        .container{
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .logo{
+            display: none;
+        }
+        .menu-main{
+            
+            li{
+                display: block;
+            }
+            
+            &.menu-lefter{
+                left: 0%;
+                position: relative;
+            }
+            &.menu-right{
+                right: 0%;
+                position: relative;
+            }
+        }
+    }
+    .menus-container{
+        background: blue;
+        padding-top: 100px;
+        height: 100vh;
+        background: url('images/mobile-bkgd.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+@keyframes hookfish {
+    0%{
+      top: 0;
+    }
+    50%{
+        top: 94vh;
+    }
+    100%{
+        top: 51px;
+    }
+}
+
+.hook-out:after{
+  animation-name: hookfish;
+  animation-duration: 1s; 
+  animation-timing-function: ease; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running; 
+}
+
+/*
+  is the same as:
+*/
+
+.mobile-trigger.hook-out:after{
+  animation: 
+    hookfish
+    1s
+    ease
+    0
+    alternate
+    infinite
+    none
+    running;
+}
+.mobile-trigger:after {
+    content: '';
+    display: block;
+    width: 139px;
+    height: 135px;
+    background: url("images/fish.png") no-repeat;
+    position: absolute;
+    top: 51px;
+    background-size: 100%;
+    right: 41px;
+    visibility: hidden;
+    z-index: 9999;
+    transform: rotate(-18deg);
+    transition-delay: 0.49s;
+    -webkit-transition-delay: 0.49s;
+}
+.mobile-trigger.hook-out:after{
+    visibility: visible;
+}

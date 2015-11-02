@@ -25,6 +25,12 @@
     <body <?php body_class(); ?>>
         <div class="container-full">
             <div class="row">
+                <div class="mobile-bar">
+                    <img class="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Captain Kidd Logo"/>
+                    <a href="#" class="mobile-trigger">
+                        <span>Menu</span><img src="<?php echo get_template_directory_uri(); ?>/images/hook.svg" />
+                    </a>
+                </div>
                     <header>
                         <div class="container">
                             <div class="row">
@@ -32,16 +38,18 @@
                                     <a href="<?php echo site_url(); ?>/reservations" class="reservations"></a>
                                     <a href="<?php echo site_url(); ?>/photogallerys" class="photogallery"></a>
                                 </div>
-                                <ul class="menu-lefter menu-main">
-                                    <li><a href="<?php echo site_url(); ?>/">Home</a></li>
-                                    <li><a href="<?php echo site_url(); ?>/charter-boat-trips">Trips</a></li>
-                                    <li><a href="<?php echo site_url(); ?>/fishing-boat">Boat Specs</a></li>
-                                </ul>
-                                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Captain Kidd Logo"/>
-                                <ul class="menu-right menu-main">
-                                    <li><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></li>
-                                    <li><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
-                                </ul>
+                                <div class="menus-container">
+                                    <ul class="menu-lefter menu-main">
+                                        <li><a href="<?php echo site_url(); ?>/">Home</a></li>
+                                        <li><a href="<?php echo site_url(); ?>/charter-boat-trips">Trips</a></li>
+                                        <li><a href="<?php echo site_url(); ?>/fishing-boat">Boat Specs</a></li>
+                                    </ul>
+                                        <a href="<?php echo site_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Captain Kidd Logo"/></a>
+                                    <ul class="menu-right menu-main">
+                                        <li><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></li>
+                                        <li><a href="<?php echo site_url(); ?>/contact">Contact</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </header>

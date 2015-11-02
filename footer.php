@@ -49,12 +49,17 @@
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 
     <script>
-      
       var stage = new swiffy.Stage(document.getElementById('swiffycontainer'),
           swiffyobject, {});
       stage.setBackground(null);
       stage.start();
     </script>
+<script>
+    $('.mobile-trigger').click(function(){
+        $(this).toggleClass('hook-out');
+        $('header').toggleClass('opened');
+    });
+</script>
 
         <?php wp_footer(); ?>
 

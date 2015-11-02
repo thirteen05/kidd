@@ -1,6 +1,7 @@
 header{
     background: url('images/header.png') no-repeat;
     background-size: cover;
+    background-position: bottom;
     position: relative;
     height: 240px;
     z-index: 9;
@@ -18,12 +19,24 @@ header{
         bottom: 0;
         left: 18%;
         width: auto;
+        
+        li{
+            a{
+                width: 96px;
+            }
+        }
     }
     
     &.menu-right{
         position: absolute;
         bottom: 0;
-        right: 22%;
+        right: 20%;
+        
+        li{
+            a{
+                width: 168px;
+            }
+        }
     }
     
     li{
@@ -37,7 +50,7 @@ header{
             padding: 10px 16%;
             color: #F4E2C5;
             display: block;
-            width: 100%;
+            width: 200px;
             white-space: nowrap;
             text-shadow: 2px 2px black;
             text-decoration: none;
