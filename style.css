@@ -7451,16 +7451,20 @@ header {
       text-shadow: 2px 2px black;
       text-decoration: none;
       word-spacing: -12px;
-      text-align: center; }
-      /* line 60, sass/_partials/_navbar.scss */
+      text-align: center;
+      transition: ease all 0.4s;
+      -webkit-transition: ease all 0.4s; }
+      /* line 62, sass/_partials/_navbar.scss */
       .menu-main li a:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        text-shadow: 0 0 black;
+        color: white; }
 
-/* line 66, sass/_partials/_navbar.scss */
+/* line 70, sass/_partials/_navbar.scss */
 .header-cta-container {
   position: absolute;
   right: 17%; }
-  /* line 70, sass/_partials/_navbar.scss */
+  /* line 74, sass/_partials/_navbar.scss */
   .header-cta-container .reservations {
     background: url("images/btn-reservations.png") no-repeat;
     background-size: 100%;
@@ -7468,7 +7472,7 @@ header {
     width: 185px;
     height: 70px;
     transition: ease all 0.2s; }
-  /* line 82, sass/_partials/_navbar.scss */
+  /* line 86, sass/_partials/_navbar.scss */
   .header-cta-container .photogallery {
     background: url("images/btn-photos.png") no-repeat;
     background-size: 100%;
@@ -7522,6 +7526,36 @@ body #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {
 body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
   font-size: 18px; }
 
+@-webkit-keyframes hook {
+  0% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
+  50% {
+    transform: translatey(92vh);
+    -webkit-transform: translatey(92vh); }
+  100% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); } }
+@-moz-keyframes hook {
+  0% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
+  50% {
+    transform: translatey(92vh);
+    -webkit-transform: translatey(92vh); }
+  100% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); } }
+@-o-keyframes hook {
+  0% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
+  50% {
+    transform: translatey(92vh);
+    -webkit-transform: translatey(92vh); }
+  100% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); } }
 @keyframes hook {
   0% {
     transform: translatey(0);
@@ -7532,24 +7566,74 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
   100% {
     transform: translatey(0);
     -webkit-transform: translatey(0); } }
-/* line 16, sass/_partials/_responsive.scss */
+/* line 63, sass/_partials/_responsive.scss */
 .hook-out img {
   animation-name: hook;
+  -webkit-animation-name: hook;
+  -moz-animation-name: hook;
+  -o-animation-name: hook;
   animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
   animation-delay: 0;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
   animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
   animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-play-state: running; }
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running; }
 
 /*
   is the same as:
 */
-/* line 31, sass/_partials/_responsive.scss */
-.hook-out img {
-  animation: hook 1s ease 0 alternate infinite none running; }
-
+@-webkit-keyframes hookline {
+  0% {
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); }
+  50% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
+  100% {
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); } }
+@-moz-keyframes hookline {
+  0% {
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); }
+  50% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
+  100% {
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); } }
+@-o-keyframes hookline {
+  0% {
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); }
+  50% {
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
+  100% {
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); } }
 @keyframes hookline {
   0% {
     transform: translatey(-92vh);
@@ -7560,62 +7644,82 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
   100% {
     transform: translatey(-92vh);
     -webkit-transform: translatey(-92vh); } }
-/* line 57, sass/_partials/_responsive.scss */
+/* line 158, sass/_partials/_responsive.scss */
 .hook-out:before {
   animation-name: hookline;
+  -webkit-animation-name: hookline;
+  -moz-animation-name: hookline;
+  -o-animation-name: hookline;
   animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
   animation-delay: 0;
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
   animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
   animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-play-state: running; }
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running; }
 
 /*
   is the same as:
 */
-/* line 72, sass/_partials/_responsive.scss */
-.hook-out:before {
-  animation: hookline 1s ease 0 alternate infinite none running; }
-
 @media (max-width: 1540px) {
-  /* line 84, sass/_partials/_responsive.scss */
+  /* line 209, sass/_partials/_responsive.scss */
   .menu-main.menu-lefter {
     left: 11%; }
 
-  /* line 87, sass/_partials/_responsive.scss */
+  /* line 212, sass/_partials/_responsive.scss */
   .menu-main.menu-right {
     right: 15%; }
 
-  /* line 90, sass/_partials/_responsive.scss */
+  /* line 215, sass/_partials/_responsive.scss */
   header .logo {
     width: 20vw; } }
 @media (max-width: 1270px) {
-  /* line 95, sass/_partials/_responsive.scss */
+  /* line 220, sass/_partials/_responsive.scss */
   .menu-main.menu-lefter {
     left: 4%; }
 
-  /* line 98, sass/_partials/_responsive.scss */
+  /* line 223, sass/_partials/_responsive.scss */
   .menu-main.menu-right {
     right: 4%; }
 
-  /* line 101, sass/_partials/_responsive.scss */
+  /* line 226, sass/_partials/_responsive.scss */
   header {
     height: 19vw; } }
 @media (min-width: 1025px) {
-  /* line 106, sass/_partials/_responsive.scss */
+  /* line 231, sass/_partials/_responsive.scss */
   .mobile-bar {
     display: none; } }
 @media (max-width: 1024px) {
-  /* line 111, sass/_partials/_responsive.scss */
+  /* line 236, sass/_partials/_responsive.scss */
   .main-contain {
     padding: 14% 3% 2% 3%; }
 
-  /* line 114, sass/_partials/_responsive.scss */
+  /* line 239, sass/_partials/_responsive.scss */
   .header-cta-container {
     display: none; }
 
-  /* line 117, sass/_partials/_responsive.scss */
+  /* line 242, sass/_partials/_responsive.scss */
   .mobile-bar {
     display: block;
     position: fixed;
@@ -7625,11 +7729,11 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
     background-size: auto 242%;
     background-position: bottom; }
 
-  /* line 126, sass/_partials/_responsive.scss */
+  /* line 251, sass/_partials/_responsive.scss */
   .logo-mobile {
     width: 87px; }
 
-  /* line 129, sass/_partials/_responsive.scss */
+  /* line 254, sass/_partials/_responsive.scss */
   .mobile-trigger {
     position: relative;
     float: right;
@@ -7640,21 +7744,21 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
     letter-spacing: 3px;
     color: white;
     font-size: 21px; }
-    /* line 140, sass/_partials/_responsive.scss */
+    /* line 265, sass/_partials/_responsive.scss */
     .mobile-trigger span {
       visibility: visible;
       opacity: 1;
       transition: ease all 0.3s;
       -webkit-transition: ease all 0.3s; }
-    /* line 147, sass/_partials/_responsive.scss */
+    /* line 272, sass/_partials/_responsive.scss */
     .mobile-trigger:hover, .mobile-trigger:active, .mobile-trigger:focus {
       color: white;
       text-decoration: none; }
-    /* line 159, sass/_partials/_responsive.scss */
+    /* line 284, sass/_partials/_responsive.scss */
     .mobile-trigger.hook-out span {
       visibility: hidden;
       opacity: 0; }
-    /* line 165, sass/_partials/_responsive.scss */
+    /* line 290, sass/_partials/_responsive.scss */
     .mobile-trigger:before {
       content: '';
       display: block;
@@ -7666,7 +7770,7 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
       right: 36px;
       transform: translatey(-92vh);
       -webkit-transform: translatey(-92vh); }
-    /* line 178, sass/_partials/_responsive.scss */
+    /* line 303, sass/_partials/_responsive.scss */
     .mobile-trigger img {
       position: absolute;
       top: 0;
@@ -7679,7 +7783,7 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
       transition: ease all 0.6s;
       -webkit-transition: ease all 0.6s; }
 
-  /* line 192, sass/_partials/_responsive.scss */
+  /* line 317, sass/_partials/_responsive.scss */
   header {
     position: fixed;
     width: 100%;
@@ -7691,31 +7795,31 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
     -webkit-transition: ease all 0.5s;
     transition-delay: 0.49s;
     -webkit-transition-delay: 0.49s; }
-    /* line 204, sass/_partials/_responsive.scss */
+    /* line 329, sass/_partials/_responsive.scss */
     header.opened {
       transform: translatey(0);
       -webkit-transform: translatey(0); }
-    /* line 208, sass/_partials/_responsive.scss */
+    /* line 333, sass/_partials/_responsive.scss */
     header .container {
       width: 100%;
       padding-left: 0;
       padding-right: 0; }
-    /* line 213, sass/_partials/_responsive.scss */
+    /* line 338, sass/_partials/_responsive.scss */
     header .logo {
       display: none; }
-    /* line 218, sass/_partials/_responsive.scss */
+    /* line 343, sass/_partials/_responsive.scss */
     header .menu-main li {
       display: block; }
-    /* line 222, sass/_partials/_responsive.scss */
+    /* line 347, sass/_partials/_responsive.scss */
     header .menu-main.menu-lefter {
       left: 0%;
       position: relative; }
-    /* line 226, sass/_partials/_responsive.scss */
+    /* line 351, sass/_partials/_responsive.scss */
     header .menu-main.menu-right {
       right: 0%;
       position: relative; }
 
-  /* line 232, sass/_partials/_responsive.scss */
+  /* line 357, sass/_partials/_responsive.scss */
   .menus-container {
     background: blue;
     padding-top: 100px;
@@ -7723,63 +7827,63 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
     background: url("images/mobile-bkgd.jpg") no-repeat;
     background-size: cover; } }
 @media (min-width: 768px) {
-  /* line 241, sass/_partials/_responsive.scss */
+  /* line 366, sass/_partials/_responsive.scss */
   .show-mobile {
     display: none; } }
 @media (max-width: 768px) {
-  /* line 246, sass/_partials/_responsive.scss */
+  /* line 371, sass/_partials/_responsive.scss */
   .logo-mobile {
     width: 100px;
     position: relative;
     left: 10%; }
 
-  /* line 251, sass/_partials/_responsive.scss */
+  /* line 376, sass/_partials/_responsive.scss */
   .mobile-bar {
     height: 95px; }
 
-  /* line 254, sass/_partials/_responsive.scss */
+  /* line 379, sass/_partials/_responsive.scss */
   #Socials, .left-side {
     float: none;
     text-align: center; }
 
-  /* line 258, sass/_partials/_responsive.scss */
+  /* line 383, sass/_partials/_responsive.scss */
   #Socials {
     background: url(images/footer.png) no-repeat top center;
     background-size: cover;
     padding: 10px; }
-    /* line 263, sass/_partials/_responsive.scss */
+    /* line 388, sass/_partials/_responsive.scss */
     #Socials img {
       width: 22%;
       height: auto; }
 
-  /* line 268, sass/_partials/_responsive.scss */
+  /* line 393, sass/_partials/_responsive.scss */
   #FooterWrapper {
     background: none; }
 
-  /* line 271, sass/_partials/_responsive.scss */
+  /* line 396, sass/_partials/_responsive.scss */
   #Footer {
     color: black; }
-    /* line 275, sass/_partials/_responsive.scss */
+    /* line 400, sass/_partials/_responsive.scss */
     #Footer .footer-links a {
       font-size: 18px; }
-    /* line 279, sass/_partials/_responsive.scss */
+    /* line 404, sass/_partials/_responsive.scss */
     #Footer a {
       color: black; }
 
-  /* line 283, sass/_partials/_responsive.scss */
+  /* line 408, sass/_partials/_responsive.scss */
   body h1 {
     font-size: 2.7rem;
     line-height: 1.5;
     text-align: center; }
 
-  /* line 288, sass/_partials/_responsive.scss */
+  /* line 413, sass/_partials/_responsive.scss */
   body.page-id-71 h1 {
     margin-bottom: 0; }
 
-  /* line 291, sass/_partials/_responsive.scss */
+  /* line 416, sass/_partials/_responsive.scss */
   .show-mobile {
     display: block; }
-    /* line 294, sass/_partials/_responsive.scss */
+    /* line 419, sass/_partials/_responsive.scss */
     .show-mobile .header-cta-container {
       padding-top: 92px;
       z-index: 9;
@@ -7788,28 +7892,28 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
       display: block;
       right: 0; }
 
-  /* line 303, sass/_partials/_responsive.scss */
+  /* line 428, sass/_partials/_responsive.scss */
   #swiffycontainer {
     display: none; }
 
-  /* line 306, sass/_partials/_responsive.scss */
+  /* line 431, sass/_partials/_responsive.scss */
   .main-contain {
     background: url("images/mobile-bkg.jpg") no-repeat;
     background-size: cover;
     padding: 137px 3% 2% 3%; }
 
-  /* line 311, sass/_partials/_responsive.scss */
+  /* line 436, sass/_partials/_responsive.scss */
   #ContentWrapper {
     background: none; } }
 @media (max-width: 450px) {
-  /* line 316, sass/_partials/_responsive.scss */
+  /* line 441, sass/_partials/_responsive.scss */
   .mobile-planks li a {
     font-size: 3.6vw; }
 
-  /* line 319, sass/_partials/_responsive.scss */
+  /* line 444, sass/_partials/_responsive.scss */
   .header-cta-container .photogallery, .header-cta-container .reservations {
     width: 41%; } }
-/* line 323, sass/_partials/_responsive.scss */
+/* line 448, sass/_partials/_responsive.scss */
 .mobile-trigger:after {
   content: '';
   display: block;
@@ -7828,7 +7932,7 @@ body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
   transition-delay: 0.49s;
   -webkit-transition-delay: 0.49s; }
 
-/* line 341, sass/_partials/_responsive.scss */
+/* line 466, sass/_partials/_responsive.scss */
 .mobile-trigger.hook-out:after {
   visibility: visible;
   transform: translatey(0);

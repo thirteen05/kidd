@@ -56,9 +56,13 @@ header{
             text-decoration: none;
             word-spacing: -12px;
             text-align: center;
+            transition: ease all 0.4s;
+            -webkit-transition: ease all 0.4s;
             
             &:hover{
                 text-decoration: none;
+                text-shadow: 0 0 black;
+                color: white;
             }
         }
     }

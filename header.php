@@ -16,7 +16,7 @@
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/runtime.js">       </script>
         <?php
             if ( is_front_page() ) {
-                include '/wp-content/themes/kidd/swiffy-code.php';
+                include 'swiffy-code.php';
             } 
         ?>
         <?php wp_head(); ?>

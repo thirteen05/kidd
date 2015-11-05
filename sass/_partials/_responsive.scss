@@ -1,3 +1,45 @@
+@-webkit-keyframes hook {
+  0%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+    50%{
+        transform: translatey(92vh);
+        -webkit-transform: translatey(92vh);
+    }
+    100%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+}
+@-moz-keyframes hook {
+  0%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+    50%{
+        transform: translatey(92vh);
+        -webkit-transform: translatey(92vh);
+    }
+    100%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+}
+@-o-keyframes hook {
+  0%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+    50%{
+        transform: translatey(92vh);
+        -webkit-transform: translatey(92vh);
+    }
+    100%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+}
 @keyframes hook {
     0%{
         transform: translatey(0);
@@ -12,32 +54,91 @@
         -webkit-transform: translatey(0);
     }
 }
-
+//.hook-out img{
+//    animation: hook 1s ease 0 alternate 1 forwards  running;
+//    -webkit-animation: hook 1s ease 0 alternate 1 forwards  running;
+//    -moz-animation: hook 1s ease 0 alternate 1 forwards running;
+//    -o-animation: hook 1s ease 0 alternate 1 forwards running;
+//}
 .hook-out img{
-  animation-name: hook;
-  animation-duration: 1s; 
-  animation-timing-function: ease; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running; 
+    animation-name: hook;
+    -webkit-animation-name: hook;
+    -moz-animation-name: hook;
+    -o-animation-name: hook;
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-timing-function: ease; 
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-delay: 0;
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-play-state: running; 
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
 }
 
 /*
   is the same as:
 */
-
-.hook-out img{
-  animation: 
-    hook
-    1s
-    ease
-    0
-    alternate
-    infinite
-    none
-    running;
+@-webkit-keyframes hookline {
+  0%{
+      transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh);
+    }
+    50%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+    100%{
+        transform: translatey(-92vh);
+        -webkit-transform: translatey(-92vh);
+    }
+}
+@-moz-keyframes hookline {
+  0%{
+      transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh);
+    }
+    50%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+    100%{
+        transform: translatey(-92vh);
+        -webkit-transform: translatey(-92vh);
+    }
+}
+@-o-keyframes hookline {
+  0%{
+      transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh);
+    }
+    50%{
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+    }
+    100%{
+        transform: translatey(-92vh);
+        -webkit-transform: translatey(-92vh);
+    }
 }
 @keyframes hookline {
     0%{
@@ -55,31 +156,55 @@
 }
 
 .hook-out:before{
-  animation-name: hookline;
-  animation-duration: 1s; 
-  animation-timing-function: ease; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running; 
+    animation-name: hookline;
+    -webkit-animation-name: hookline;
+    -moz-animation-name: hookline;
+    -o-animation-name: hookline;
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-timing-function: ease; 
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    -o-animation-timing-function: ease;
+    animation-delay: 0;
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-play-state: running; 
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
 }
 
 /*
   is the same as:
 */
 
-.hook-out:before{
-  animation: 
-    hookline
-    1s
-    ease
-    0
-    alternate
-    infinite
-    none
-    running;
-}
+//.hook-out:before{
+//  animation: 
+//    hookline
+//    1s
+//    ease
+//    0
+//    alternate
+//    infinite
+//    none
+//    running;
+//}
 @media (max-width: 1540px){
     .menu-main.menu-lefter{
         left: 11%;
@@ -343,45 +468,3 @@
     transform: translatey(0);
     -webkit-transform: translatey(0);
 }
-//@keyframes hookfish {
-//    0%{
-//      transform: rotate(-18deg) translatey(92vh);
-//    -webkit-transform: rotate(-18deg) translatey(92vh);
-//    }
-//    50%{
-//        transform: rotate(-18deg) translatey(92vh);
-//    -webkit-transform: rotate(-18deg) translatey(92vh);
-//    }
-//    100%{
-//        transform: rotate(-18deg) translatey(0);
-//    -webkit-transform: rotate(-18deg) translatey(0);
-//    }
-//}
-//
-//.hook-out:after{
-//  animation-name: hookfish;
-//  animation-duration: 1s; 
-//  animation-timing-function: ease; 
-//  animation-delay: 0;
-//  animation-direction: alternate;
-//  animation-iteration-count: 1;
-//  animation-fill-mode: forwards;
-//  animation-play-state: running; 
-//}
-//
-///*
-//  is the same as:
-//*/
-//
-//.mobile-trigger.hook-out:after{
-//  animation: 
-//    hookfish
-//    1s
-//    ease
-//    0
-//    alternate
-//    infinite
-//    none
-//    running;
-//}
-//
