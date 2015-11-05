@@ -26,17 +26,23 @@
         <div class="container-full">
             <div class="row">
                 <div class="mobile-bar">
-                    <img class="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Captain Kidd Logo"/>
+                    <a href="<?php echo site_url(); ?>"><img class="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Captain Kidd Logo"/></a>
                     <a href="#" class="mobile-trigger">
                         <span>Menu</span><img src="<?php echo get_template_directory_uri(); ?>/images/hook.svg" />
                     </a>
+                </div>
+                <div class="show-mobile">
+                    <div class="header-cta-container">
+                        <a href="<?php echo site_url(); ?>/reservations" class="reservations"></a>
+                        <a href="<?php echo site_url(); ?>/photo-gallery" class="photogallery"></a>
+                    </div>
                 </div>
                     <header>
                         <div class="container">
                             <div class="row">
                                 <div class="header-cta-container">
                                     <a href="<?php echo site_url(); ?>/reservations" class="reservations"></a>
-                                    <a href="<?php echo site_url(); ?>/photogallerys" class="photogallery"></a>
+                                    <a href="<?php echo site_url(); ?>/photo-gallery" class="photogallery"></a>
                                 </div>
                                 <div class="menus-container">
                                     <ul class="menu-lefter menu-main">
@@ -58,6 +64,22 @@
                         if ( is_front_page() ) {
                     ?>
                         <div id="swiffycontainer" style="width: 100%; height: 301px"></div>
+                        <div class="show-mobile">
+                            <ul class="mobile-planks">
+                                <li>
+                                    <a href="#" class="brown">Inshore and Offshore Fishing</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="red">Dolphin Encounter</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="brown">Local Sightseeing</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="red">Shelling and Island Picnicking</a>
+                                </li>
+                            </ul>
+                        </div>
                     <?php
                         } 
                     ?>

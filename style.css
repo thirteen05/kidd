@@ -7486,14 +7486,53 @@ header {
 .home h1.post-title {
   display: none; }
 
+/* line 1, sass/_partials/_planks.scss */
+.mobile-planks {
+  padding: 0;
+  margin-top: 40px; }
+  /* line 5, sass/_partials/_planks.scss */
+  .mobile-planks .red {
+    background: url("images/brown-plank.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin: 10px 0; }
+  /* line 11, sass/_partials/_planks.scss */
+  .mobile-planks .brown {
+    background: url("images/red-plank.png") no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin: 10px 0; }
+  /* line 17, sass/_partials/_planks.scss */
+  .mobile-planks li {
+    list-style: none; }
+    /* line 20, sass/_partials/_planks.scss */
+    .mobile-planks li a {
+      color: white;
+      font-family: 'capt';
+      text-decoration: none;
+      padding: 15px 20px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 2px; }
+
+/* line 2, sass/_partials/_gallery.scss */
+body #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {
+  font-size: 24px; }
+/* line 5, sass/_partials/_gallery.scss */
+body #bwg_container1_0 #bwg_container2_0 .paging-input_0 {
+  font-size: 18px; }
+
 @keyframes hook {
   0% {
-    top: 0; }
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
   50% {
-    top: 92vh; }
+    transform: translatey(92vh);
+    -webkit-transform: translatey(92vh); }
   100% {
-    top: 0; } }
-/* line 13, sass/_partials/_responsive.scss */
+    transform: translatey(0);
+    -webkit-transform: translatey(0); } }
+/* line 16, sass/_partials/_responsive.scss */
 .hook-out img {
   animation-name: hook;
   animation-duration: 1s;
@@ -7507,18 +7546,21 @@ header {
 /*
   is the same as:
 */
-/* line 28, sass/_partials/_responsive.scss */
+/* line 31, sass/_partials/_responsive.scss */
 .hook-out img {
   animation: hook 1s ease 0 alternate infinite none running; }
 
 @keyframes hookline {
   0% {
-    height: 14px; }
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); }
   50% {
-    height: 94vh; }
+    transform: translatey(0);
+    -webkit-transform: translatey(0); }
   100% {
-    height: 14px; } }
-/* line 51, sass/_partials/_responsive.scss */
+    transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh); } }
+/* line 57, sass/_partials/_responsive.scss */
 .hook-out:before {
   animation-name: hookline;
   animation-duration: 1s;
@@ -7532,48 +7574,48 @@ header {
 /*
   is the same as:
 */
-/* line 66, sass/_partials/_responsive.scss */
+/* line 72, sass/_partials/_responsive.scss */
 .hook-out:before {
   animation: hookline 1s ease 0 alternate infinite none running; }
 
 @media (max-width: 1540px) {
-  /* line 78, sass/_partials/_responsive.scss */
+  /* line 84, sass/_partials/_responsive.scss */
   .menu-main.menu-lefter {
     left: 11%; }
 
-  /* line 81, sass/_partials/_responsive.scss */
+  /* line 87, sass/_partials/_responsive.scss */
   .menu-main.menu-right {
     right: 15%; }
 
-  /* line 84, sass/_partials/_responsive.scss */
+  /* line 90, sass/_partials/_responsive.scss */
   header .logo {
     width: 20vw; } }
 @media (max-width: 1270px) {
-  /* line 89, sass/_partials/_responsive.scss */
+  /* line 95, sass/_partials/_responsive.scss */
   .menu-main.menu-lefter {
     left: 4%; }
 
-  /* line 92, sass/_partials/_responsive.scss */
+  /* line 98, sass/_partials/_responsive.scss */
   .menu-main.menu-right {
     right: 4%; }
 
-  /* line 95, sass/_partials/_responsive.scss */
+  /* line 101, sass/_partials/_responsive.scss */
   header {
     height: 19vw; } }
 @media (min-width: 1025px) {
-  /* line 100, sass/_partials/_responsive.scss */
+  /* line 106, sass/_partials/_responsive.scss */
   .mobile-bar {
     display: none; } }
 @media (max-width: 1024px) {
-  /* line 105, sass/_partials/_responsive.scss */
+  /* line 111, sass/_partials/_responsive.scss */
   .main-contain {
     padding: 14% 3% 2% 3%; }
 
-  /* line 108, sass/_partials/_responsive.scss */
+  /* line 114, sass/_partials/_responsive.scss */
   .header-cta-container {
     display: none; }
 
-  /* line 111, sass/_partials/_responsive.scss */
+  /* line 117, sass/_partials/_responsive.scss */
   .mobile-bar {
     display: block;
     position: fixed;
@@ -7583,11 +7625,11 @@ header {
     background-size: auto 242%;
     background-position: bottom; }
 
-  /* line 120, sass/_partials/_responsive.scss */
+  /* line 126, sass/_partials/_responsive.scss */
   .logo-mobile {
     width: 87px; }
 
-  /* line 123, sass/_partials/_responsive.scss */
+  /* line 129, sass/_partials/_responsive.scss */
   .mobile-trigger {
     position: relative;
     float: right;
@@ -7598,31 +7640,33 @@ header {
     letter-spacing: 3px;
     color: white;
     font-size: 21px; }
-    /* line 134, sass/_partials/_responsive.scss */
+    /* line 140, sass/_partials/_responsive.scss */
     .mobile-trigger span {
       visibility: visible;
       opacity: 1;
       transition: ease all 0.3s;
       -webkit-transition: ease all 0.3s; }
-    /* line 141, sass/_partials/_responsive.scss */
-    .mobile-trigger:hover {
+    /* line 147, sass/_partials/_responsive.scss */
+    .mobile-trigger:hover, .mobile-trigger:active, .mobile-trigger:focus {
       color: white;
       text-decoration: none; }
-    /* line 153, sass/_partials/_responsive.scss */
+    /* line 159, sass/_partials/_responsive.scss */
     .mobile-trigger.hook-out span {
       visibility: hidden;
       opacity: 0; }
-    /* line 159, sass/_partials/_responsive.scss */
+    /* line 165, sass/_partials/_responsive.scss */
     .mobile-trigger:before {
       content: '';
       display: block;
       width: 1px;
-      height: 14px;
+      height: 94vh;
       background: black;
       position: absolute;
       top: 0px;
-      right: 36px; }
-    /* line 170, sass/_partials/_responsive.scss */
+      right: 36px;
+      transform: translatey(-92vh);
+      -webkit-transform: translatey(-92vh); }
+    /* line 178, sass/_partials/_responsive.scss */
     .mobile-trigger img {
       position: absolute;
       top: 0;
@@ -7630,10 +7674,12 @@ header {
       height: 100px;
       right: 0;
       z-index: 999;
+      transform: translatey(0);
+      -webkit-transform: translatey(0);
       transition: ease all 0.6s;
       -webkit-transition: ease all 0.6s; }
 
-  /* line 182, sass/_partials/_responsive.scss */
+  /* line 192, sass/_partials/_responsive.scss */
   header {
     position: fixed;
     width: 100%;
@@ -7645,72 +7691,125 @@ header {
     -webkit-transition: ease all 0.5s;
     transition-delay: 0.49s;
     -webkit-transition-delay: 0.49s; }
-    /* line 194, sass/_partials/_responsive.scss */
+    /* line 204, sass/_partials/_responsive.scss */
     header.opened {
       transform: translatey(0);
       -webkit-transform: translatey(0); }
-    /* line 198, sass/_partials/_responsive.scss */
+    /* line 208, sass/_partials/_responsive.scss */
     header .container {
       width: 100%;
       padding-left: 0;
       padding-right: 0; }
-    /* line 203, sass/_partials/_responsive.scss */
+    /* line 213, sass/_partials/_responsive.scss */
     header .logo {
       display: none; }
-    /* line 208, sass/_partials/_responsive.scss */
+    /* line 218, sass/_partials/_responsive.scss */
     header .menu-main li {
       display: block; }
-    /* line 212, sass/_partials/_responsive.scss */
+    /* line 222, sass/_partials/_responsive.scss */
     header .menu-main.menu-lefter {
       left: 0%;
       position: relative; }
-    /* line 216, sass/_partials/_responsive.scss */
+    /* line 226, sass/_partials/_responsive.scss */
     header .menu-main.menu-right {
       right: 0%;
       position: relative; }
 
-  /* line 222, sass/_partials/_responsive.scss */
+  /* line 232, sass/_partials/_responsive.scss */
   .menus-container {
     background: blue;
     padding-top: 100px;
     height: 100vh;
     background: url("images/mobile-bkgd.jpg") no-repeat;
     background-size: cover; } }
+@media (min-width: 768px) {
+  /* line 241, sass/_partials/_responsive.scss */
+  .show-mobile {
+    display: none; } }
 @media (max-width: 768px) {
-  /* line 231, sass/_partials/_responsive.scss */
+  /* line 246, sass/_partials/_responsive.scss */
+  .logo-mobile {
+    width: 100px;
+    position: relative;
+    left: 10%; }
+
+  /* line 251, sass/_partials/_responsive.scss */
+  .mobile-bar {
+    height: 95px; }
+
+  /* line 254, sass/_partials/_responsive.scss */
+  #Socials, .left-side {
+    float: none;
+    text-align: center; }
+
+  /* line 258, sass/_partials/_responsive.scss */
+  #Socials {
+    background: url(images/footer.png) no-repeat top center;
+    background-size: cover;
+    padding: 10px; }
+    /* line 263, sass/_partials/_responsive.scss */
+    #Socials img {
+      width: 22%;
+      height: auto; }
+
+  /* line 268, sass/_partials/_responsive.scss */
+  #FooterWrapper {
+    background: none; }
+
+  /* line 271, sass/_partials/_responsive.scss */
+  #Footer {
+    color: black; }
+    /* line 275, sass/_partials/_responsive.scss */
+    #Footer .footer-links a {
+      font-size: 18px; }
+    /* line 279, sass/_partials/_responsive.scss */
+    #Footer a {
+      color: black; }
+
+  /* line 283, sass/_partials/_responsive.scss */
+  body h1 {
+    font-size: 2.7rem;
+    line-height: 1.5;
+    text-align: center; }
+
+  /* line 288, sass/_partials/_responsive.scss */
+  body.page-id-71 h1 {
+    margin-bottom: 0; }
+
+  /* line 291, sass/_partials/_responsive.scss */
+  .show-mobile {
+    display: block; }
+    /* line 294, sass/_partials/_responsive.scss */
+    .show-mobile .header-cta-container {
+      padding-top: 92px;
+      z-index: 9;
+      width: 100%;
+      text-align: center;
+      display: block;
+      right: 0; }
+
+  /* line 303, sass/_partials/_responsive.scss */
+  #swiffycontainer {
+    display: none; }
+
+  /* line 306, sass/_partials/_responsive.scss */
   .main-contain {
     background: url("images/mobile-bkg.jpg") no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    padding: 137px 3% 2% 3%; }
 
-  /* line 235, sass/_partials/_responsive.scss */
+  /* line 311, sass/_partials/_responsive.scss */
   #ContentWrapper {
     background: none; } }
-@keyframes hookfish {
-  0% {
-    top: 0; }
-  50% {
-    top: 94vh; }
-  100% {
-    top: 51px; } }
-/* line 251, sass/_partials/_responsive.scss */
-.hook-out:after {
-  animation-name: hookfish;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running; }
+@media (max-width: 450px) {
+  /* line 316, sass/_partials/_responsive.scss */
+  .mobile-planks li a {
+    font-size: 3.6vw; }
 
-/*
-  is the same as:
-*/
-/* line 266, sass/_partials/_responsive.scss */
-.mobile-trigger.hook-out:after {
-  animation: hookfish 1s ease 0 alternate infinite none running; }
-
-/* line 277, sass/_partials/_responsive.scss */
+  /* line 319, sass/_partials/_responsive.scss */
+  .header-cta-container .photogallery, .header-cta-container .reservations {
+    width: 41%; } }
+/* line 323, sass/_partials/_responsive.scss */
 .mobile-trigger:after {
   content: '';
   display: block;
@@ -7718,15 +7817,19 @@ header {
   height: 135px;
   background: url("images/fish.png") no-repeat;
   position: absolute;
-  top: 51px;
+  top: 44px;
   background-size: 100%;
-  right: 41px;
+  right: 52px;
   visibility: hidden;
   z-index: 9999;
-  transform: rotate(-18deg);
+  transform: translatey(92vh);
+  -webkit-transform: translatey(92vh);
+  transition: ease all 0.52s;
   transition-delay: 0.49s;
   -webkit-transition-delay: 0.49s; }
 
-/* line 293, sass/_partials/_responsive.scss */
+/* line 341, sass/_partials/_responsive.scss */
 .mobile-trigger.hook-out:after {
-  visibility: visible; }
+  visibility: visible;
+  transform: translatey(0);
+  -webkit-transform: translatey(0); }

@@ -1,0 +1,30 @@
+.mobile-planks{
+    padding: 0;
+    margin-top: 40px;
+    
+    .red{
+        background: url('images/brown-plank.png') no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        margin: 10px 0;
+    }
+    .brown{
+        background: url('images/red-plank.png') no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        margin: 10px 0;
+    }
+    li{
+        list-style: none;
+
+        a{
+            color: white;
+            font-family: 'capt';
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1.7rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+}

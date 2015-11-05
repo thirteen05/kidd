@@ -19,18 +19,20 @@
                             </div>
                             <div class="col-md-6 col-md-pull-6">
                                 <div class="left-side">
-                                    <a href="index.html">Home</a>
-                                    | 
-                                    <a href="charter-boat-trips.html">Trips</a>
-                                    | 
-                                    <a href="fishing-boat.html">Boat Specs</a>
-                                    | 
-                                    <a href="testimonials.html">Testimonials</a>
-                                    | 
-                                    <a href="contact.html">Contact</a>
+                                    <div class="footer-links">
+                                        <a href="index.html">Home</a>
+                                        | 
+                                        <a href="charter-boat-trips.html">Trips</a>
+                                        | 
+                                        <a href="fishing-boat.html">Boat Specs</a>
+                                        | 
+                                        <a href="testimonials.html">Testimonials</a>
+                                        | 
+                                        <a href="contact.html">Contact</a>
+                                    </div>
                                     <br>
                                     © 2015 Captain Kidd Fishing Services.
-                                    <a href="http://www.fastf.com" target="_blank">Web Design by Fast F</a>
+                                    <a href="http://www.thirteen05.com" target="_blank">Web Design by thirteen05 creative</a>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +57,8 @@
       stage.start();
     </script>
 <script>
-    $('.mobile-trigger').click(function(){
+    $('.mobile-trigger').click(function(event){
+        event.preventDefault(); 
         $(this).toggleClass('hook-out');
         $('header').toggleClass('opened');
     });

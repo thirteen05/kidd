@@ -1,12 +1,15 @@
 @keyframes hook {
     0%{
-      top: 0;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
     }
     50%{
-        top: 92vh;
+        transform: translatey(92vh);
+        -webkit-transform: translatey(92vh);
     }
     100%{
-        top: 0;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
     }
 }
 
@@ -38,13 +41,16 @@
 }
 @keyframes hookline {
     0%{
-      height: 14px;
+      transform: translatey(-92vh);
+    -webkit-transform: translatey(-92vh);
     }
     50%{
-        height: 94vh;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
     }
     100%{
-        height: 14px;
+        transform: translatey(-92vh);
+        -webkit-transform: translatey(-92vh);
     }
 }
 
@@ -138,7 +144,7 @@
             -webkit-transition: ease all 0.3s;
         }
         
-        &:hover{
+        &:hover, &:active, &:focus{
             color: white;
             text-decoration: none;
         }
@@ -160,11 +166,13 @@
             content: '';
             display: block;
             width: 1px;
-            height: 14px;
+            height: 94vh;
             background: black;
             position: absolute;
             top: 0px;
             right: 36px;
+            transform: translatey(-92vh);
+            -webkit-transform: translatey(-92vh);
         }
         
         img{
@@ -174,6 +182,8 @@
             height: 100px;
             right: 0;
             z-index: 999;
+            transform: translatey(0);
+            -webkit-transform: translatey(0);
             transition: ease all 0.6s;
             -webkit-transition: ease all 0.6s;
         }
@@ -227,52 +237,88 @@
         background-size: cover;
     }
 }
+@media (min-width: 768px){
+    .show-mobile{
+        display: none;
+    }
+}
 @media (max-width: 768px){
+    .logo-mobile{
+        width: 100px;
+        position: relative;
+        left: 10%;
+    }
+    .mobile-bar{
+        height: 95px;
+    }
+    #Socials, .left-side{
+        float: none;
+        text-align: center;
+    }
+    #Socials{
+        background: url(images/footer.png) no-repeat top center;
+        background-size: cover;
+        padding: 10px;
+        
+        img{
+            width: 22%;
+            height: auto;
+        }
+    }
+    #FooterWrapper{
+        background: none;
+    }
+    #Footer{
+        color: black;
+        
+        .footer-links{
+            a{
+                font-size: 18px;
+            }
+        }
+        a{
+            color: black;
+        }
+    }
+    body h1{
+        font-size: 2.7rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    body.page-id-71 h1{
+        margin-bottom: 0;
+    }
+    .show-mobile{
+        display: block;
+        
+        .header-cta-container{
+            padding-top: 92px;
+            z-index: 9;
+            width: 100%;
+            text-align: center;
+            display: block;
+            right: 0;
+        }
+    }
+    #swiffycontainer{
+        display: none;
+    }
     .main-contain{
         background: url('images/mobile-bkg.jpg') no-repeat;
         background-size: cover;
+        padding: 137px 3% 2% 3%;
     }
     #ContentWrapper{
         background: none;
     }
 }
-@keyframes hookfish {
-    0%{
-      top: 0;
+@media (max-width: 450px){
+    .mobile-planks li a{
+        font-size: 3.6vw;
     }
-    50%{
-        top: 94vh;
+    .header-cta-container .photogallery, .header-cta-container .reservations{
+        width: 41%;
     }
-    100%{
-        top: 51px;
-    }
-}
-
-.hook-out:after{
-  animation-name: hookfish;
-  animation-duration: 1s; 
-  animation-timing-function: ease; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: running; 
-}
-
-/*
-  is the same as:
-*/
-
-.mobile-trigger.hook-out:after{
-  animation: 
-    hookfish
-    1s
-    ease
-    0
-    alternate
-    infinite
-    none
-    running;
 }
 .mobile-trigger:after {
     content: '';
@@ -281,15 +327,61 @@
     height: 135px;
     background: url("images/fish.png") no-repeat;
     position: absolute;
-    top: 51px;
+    top: 44px;
     background-size: 100%;
-    right: 41px;
+    right: 52px;
     visibility: hidden;
     z-index: 9999;
-    transform: rotate(-18deg);
+    transform: translatey(92vh);
+    -webkit-transform: translatey(92vh);
+    transition: ease all 0.52s;
     transition-delay: 0.49s;
     -webkit-transition-delay: 0.49s;
 }
 .mobile-trigger.hook-out:after{
     visibility: visible;
+    transform: translatey(0);
+    -webkit-transform: translatey(0);
 }
+//@keyframes hookfish {
+//    0%{
+//      transform: rotate(-18deg) translatey(92vh);
+//    -webkit-transform: rotate(-18deg) translatey(92vh);
+//    }
+//    50%{
+//        transform: rotate(-18deg) translatey(92vh);
+//    -webkit-transform: rotate(-18deg) translatey(92vh);
+//    }
+//    100%{
+//        transform: rotate(-18deg) translatey(0);
+//    -webkit-transform: rotate(-18deg) translatey(0);
+//    }
+//}
+//
+//.hook-out:after{
+//  animation-name: hookfish;
+//  animation-duration: 1s; 
+//  animation-timing-function: ease; 
+//  animation-delay: 0;
+//  animation-direction: alternate;
+//  animation-iteration-count: 1;
+//  animation-fill-mode: forwards;
+//  animation-play-state: running; 
+//}
+//
+///*
+//  is the same as:
+//*/
+//
+//.mobile-trigger.hook-out:after{
+//  animation: 
+//    hookfish
+//    1s
+//    ease
+//    0
+//    alternate
+//    infinite
+//    none
+//    running;
+//}
+//
