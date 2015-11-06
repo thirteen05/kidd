@@ -28,11 +28,11 @@ $CR_LANG['front']['1_view_map'] = "View Map";
 
 $CR_LANG['front']['1_time'] = "Pickup Time";
 $CR_LANG['front']['1_duration'] = "Duration";
-//$CR_LANG['front']['1_durationes']['1_4'] = "1/4 Day (2 hrs)";//
-$CR_LANG['front']['1_durationes']['1_2'] = "1/2 Day (4 hrs)";
-$CR_LANG['front']['1_durationes']['1_3'] = "3/4 Day (6 hrs)";
 $CR_LANG['front']['1_durationes']['1_1'] = "Full Day (8 hrs)";
-//$CR_LANG['front']['1_durationes']['1_E'] = "Extended (12 hrs)";//
+$CR_LANG['front']['1_durationes']['1_3'] = "3/4 Day (6 hrs)";
+$CR_LANG['front']['1_durationes']['1_2'] = "1/2 Day (4 hrs)";
+//$CR_LANG['front']['1_durationes']['1_4'] = "1/4 Day (2 hrs)";
+$CR_LANG['front']['1_durationes']['1_E'] = "Extended (12 hrs)";
 
 $CR_LANG['front']['1_num_days'] = "Number of days";
 $CR_LANG['front']['1_v_err_dates'] = "Date range is incorect";

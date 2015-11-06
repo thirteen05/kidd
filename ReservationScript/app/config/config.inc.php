@@ -59,12 +59,12 @@ if (!$stop)
 	if (isset($_SERVER['SERVER_ADDR']) && $_SERVER['SERVER_ADDR'] == '127.0.0.1')
 	{
 		if (!defined("INSTALL_FOLDER")) define("INSTALL_FOLDER", "/ReservationScript/");
-		if (!defined("INSTALL_PATH")) define("INSTALL_PATH", "/home3/newcap35/public_html/ReservationScript/");
+		if (!defined("INSTALL_PATH")) define("INSTALL_PATH", "C:/wamp/www/captainkidd/ReservationScript/");
 		if (!defined("INSTALL_URL")) define("INSTALL_URL", "http://captainkidd.local/ReservationScript/");
 	} else {
 		if (!defined("INSTALL_FOLDER")) define("INSTALL_FOLDER", "/ReservationScript/");
-		if (!defined("INSTALL_PATH")) define("INSTALL_PATH", "/public_html/ReservationScript/");
-		if (!defined("INSTALL_URL")) define("INSTALL_URL", "http://captainkiddfishing.com/ReservationScript/");
+		if (!defined("INSTALL_PATH")) define("INSTALL_PATH", "/httpdocs/ReservationScript/");
+		if (!defined("INSTALL_URL")) define("INSTALL_URL", "/kidd/ReservationScript/");
 	}
 }
 

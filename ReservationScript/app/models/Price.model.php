@@ -31,7 +31,7 @@ class PriceModel extends AppModel
 		array('name' => 'time_to', 'type' => 'time', 'default' => ':NULL'),
 		array('name' => 'length_1_4', 'type' => 'smallint', 'default' => ':NULL'),
 		array('name' => 'length_1_2', 'type' => 'smallint', 'default' => ':NULL'),
-		//array('name' => 'price_1_4', 'type' => 'decimal', 'default' => ':NULL'),//
+		array('name' => 'price_1_4', 'type' => 'decimal', 'default' => ':NULL'),
                 array('name' => 'price_1_3', 'type' => 'decimal', 'default' => ':NULL'),
 		array('name' => 'price_1_2', 'type' => 'decimal', 'default' => ':NULL'),
                 array('name' => 'price_1_E', 'type' => 'decimal', 'default' => ':NULL'),
